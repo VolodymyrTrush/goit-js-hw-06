@@ -12,6 +12,7 @@ function sizeChange(event) {
     const changeValue = event.currentTarget.value;
     if (changeValue >= textSize.sizeMin && changeValue <= textSize.sizeMax) {
         refs.textEl.style.fontSize = `${changeValue}px`
+        console.log(`${changeValue}px`);
     };       
 };
 
