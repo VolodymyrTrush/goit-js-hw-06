@@ -1,18 +1,14 @@
 const refs = {
     input: document.querySelector('#font-size-control'),
-    textEl: document.querySelector('#text'),
+    text: document.querySelector('#text'),
 };
-
-const textSize = {
-    sizeMin: refs.input.getAttribute('min'),
-    sizeMax: refs.input.getAttribute('max'),  
-};
-
+refs.text.style.fontSize = `${refs.input.value}px`;
+ 
 function sizeChange(event) {
     const changeValue = event.currentTarget.value;
-    if (changeValue >= textSize.sizeMin && changeValue <= textSize.sizeMax) {
-        refs.textEl.style.fontSize = `${changeValue}px`
-        console.log(`${changeValue}px`);
+    
+    if (changeValue >= refs.input.value && changeValue <= refs.input.value) {
+        refs.text.style.fontSize = `${refs.input.value}px`;
     };       
 };
 

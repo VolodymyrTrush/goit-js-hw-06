@@ -27,7 +27,7 @@ button {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: -10px;
+  margin: -15px;
 }
 
 .gallery li {
@@ -36,7 +36,7 @@ button {
 }
 
 .gallery img {
-  height: 25vh;
+  height: 35vh;
   width: 30vw;
   
 }

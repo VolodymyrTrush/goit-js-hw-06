@@ -7,7 +7,6 @@ const buttonEl = document.querySelector('.change-color');
 const valueColor = document.querySelector('.color');
 
 function changeColor(event) {
-  event.preventDefault();
   const changeColors = getRandomHexColor();
   bodyEl.style.backgroundColor = changeColors;
   valueColor.textContent = changeColors;
