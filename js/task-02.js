@@ -19,7 +19,7 @@ const listEl = ingredients.map(element => {
 
 getIngridientList.append(...listEl);
 
-console.log(getIngridientList);
+
 
 
 

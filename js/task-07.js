@@ -5,11 +5,7 @@ const refs = {
 refs.text.style.fontSize = `${refs.input.value}px`;
  
 function sizeChange(event) {
-    const changeValue = event.currentTarget.value;
-    
-    if (changeValue >= refs.input.value && changeValue <= refs.input.value) {
-        refs.text.style.fontSize = `${refs.input.value}px`;
-    };       
+    event.currentTarget.value = refs.input.value;  
 };
 
 refs.input.addEventListener('input', sizeChange);
